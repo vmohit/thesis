@@ -1,0 +1,10 @@
+{
+  "title": "toydb1",
+  "schema": "K(k_s, kId_i), D(url_s, dId_i), KD(dId_i, kId_i, pos_i)",
+  "workload": {
+    "Qk": {
+      "weight": 1.5,
+      "query": "Q[k1, k2](url, p1, p2):- K(k1, kId1), KD(dId, kId1, p1), K(k2, kId2), KD(dId, kId2, p2), D(url, dId)"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "size_of_first_cg": 3
+}

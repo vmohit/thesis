@@ -1,0 +1,13 @@
+{
+  "0": {
+    "title": "Entity Search",
+    "entities": [{"keyword": 1000}, {"document":1000}, {"entity":800}, {"category":10}],
+    "base_relations": [{"keyword": {"document": 50000}}, {"entity": {"document": 10000}}, {"entity": {"category": 800}}]
+  },
+  "1": {
+    "title": "IMDB",
+    "entities": [{"actor": 1000}, {"director":100}, {"movie":1000}, {"genre":10}, {"tv":800}, {"keyword": 1000}],
+    "base_relations": [{"actor": {"movie": 20000}}, {"movie": {"director": 1500}}, {"director": {"tv": 1200}}, 
+    	{"genre": {"movie": 2700}}, {"genre": {"tv": 2000}}, {"keyword": {"movie": 50000}}, {"keyword": {"tv": 40000}}]
+  }
+}

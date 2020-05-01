@@ -1,0 +1,7 @@
+#company{amazon} center at #city{new york} #country{usa} #phone{34256}
+red #car{ferrari} is better than blue #car{audi}
+blue #car{ferrari} is worse than red #car{bmw}
+#fruit{apple} is a red fruit but #fruit{orange} is not
+#company{amazon} customer service phone #phone{2142153}
+#company{microsoft} customer service #phone{54252135}
+#company{microsoft} service center is close to #company{amazon} service center

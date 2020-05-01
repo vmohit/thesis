@@ -1,0 +1,30 @@
+{
+  "title": "toydb1",
+  "schema": ["K(d_i | p_i, k_s)", "E(d_i | p_i, e_s)", "C(c_s | e_s)"],
+  "workload": {
+    "Qk": {
+      "weight": 1.5,
+      "query": {
+        "boundheadvars": ["k1","k2"],
+        "freeHeadVars": ["d","p1","p2"],
+        "subgoals": ["K(k1,d,p1)", "K(k2,d,p2)"]
+      }
+    },
+    "Qd": {
+      "weight": 1.5,
+      "query": {
+        "boundheadvars": ["k1","k2"],
+        "freeHeadVars": ["d","p1","p2"],
+        "subgoals": ["K(k,d,p)"]
+      }
+    },
+    "Qe": {
+      "weight": 1,
+      "query": {
+        "boundheadvars": ["k1","k2","d"],
+        "freeHeadVars": ["d","e","p1","p2","p"],
+        "subgoals": ["K(k1,d,p1)", "K(k2,d,p2)", "E(e,d,p)", "C(e,c)"]
+      }
+    }
+  }
+}
